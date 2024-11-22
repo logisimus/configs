@@ -67,14 +67,16 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_n,      zoom,           {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ ShiftMask,                    XK_Return, zoom,           {0} },
 	{ MODKEY,	                XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_f,      setlayout,      {0} },
 	{ MODKEY,                       XK_t,      view,           {0} },
+	{ MODKEY,                       XK_u,      setxkbgroup,    {.ui = 0 } },
+	{ MODKEY,                       XK_r,      setxkbgroup,    {.ui = 1 } },
 	TAGKEYS(                        XK_6,                      0)
 	TAGKEYS(                        XK_7,                      1)
 	TAGKEYS(                        XK_8,                      2)
